@@ -10,6 +10,9 @@ module.exports = function(source) {
 	var jsRequest = loaderUtils.getCurrentRequest(this);
 	var query = loaderUtils.getOptions(this) || {};
 	var result;
+	if (query.transpile) {
+		query.transpile.filename = coffeeRequest;
+	}
 	try {
 		result = coffee.compile(source, {
 			literate: query.literate,
