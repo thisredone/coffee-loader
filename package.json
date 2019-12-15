@@ -10,10 +10,10 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "loader-utils": "^1.0.2"
+    "loader-utils": "^1.2.3"
   },
   "devDependencies": {
-    "standard-version": "^4.2.0"
+    "standard-version": "^7.0.1"
   },
   "peerDependencies": {
     "coffeescript": ">= 1.8.x"
